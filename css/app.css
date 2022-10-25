@@ -1,0 +1,328 @@
+@font-face {
+    font-family: roboto-oh5;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/roboto-regular-webfont.woff2) format("woff2");
+}
+@font-face {
+    font-family: roboto-oh5;
+    font-style: italic;
+    font-weight: 400;
+    src: url(../fonts/roboto-italic-webfont.woff2) format("woff2");
+}
+@font-face {
+    font-family: roboto-oh5;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/roboto-bold-webfont.woff2) format("woff2");
+}
+@font-face {
+    font-family: roboto-oh5;
+    font-style: italic;
+    font-weight: 700;
+    src: url(../fonts/roboto-bolditalic-webfont.woff2) format("woff2");
+}
+::-webkit-input-placeholder {
+    color: #666;
+}
+::-moz-placeholder {
+    color: #666;
+}
+:-ms-input-placeholder {
+    color: #666;
+}
+::-ms-input-placeholder {
+    color: #666;
+}
+::placeholder {
+    color: #666;
+}
+::-moz-selection {
+    background-color: orange;
+    color: #fff;
+}
+::selection {
+    background-color: orange;
+    color: #fff;
+}
+input,
+textarea {
+    outline: none;
+}
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+    border-color: red;
+}
+input:required:valid,
+textarea:required:valid {
+    border-color: green;
+}
+body {
+    color: #333;
+    font-family: roboto-oh5, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    min-width: 320px;
+    overflow-x: hidden;
+    position: relative;
+}
+body,
+h1 {
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 14px;
+    line-height: 45px;
+}
+a {
+    text-decoration: none;
+}
+.top-line {
+    background-color: #455a64;
+    color: #fff;
+    height: 45px;
+}
+.top-line-header {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #e6e6e6;
+    height: 60px;
+    overflow: hidden;
+}
+.custom-btn {
+    background-color: #455a64;
+    border: none;
+    border-radius: 8px;
+    color: #e7e7e7;
+    padding: 5px 10px;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.custom-btn:hover {
+    background-color: #536d79;
+}
+.logo {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+.logo .logo-icon {
+    background-color: #455a64;
+    border-radius: 7px;
+    color: #fff;
+    height: 33px;
+    text-align: center;
+    width: 33px;
+}
+.logo .logo-icon i {
+    font-size: 24px;
+    line-height: 33px;
+}
+.logo h2 {
+    color: #455a64;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+    margin-left: 8px;
+}
+.combined-button {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    border-radius: 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 190px;
+}
+.combined-button i {
+    font-size: 18px;
+}
+.combined-button button {
+    border-radius: 0;
+    height: 33px;
+    line-height: 35px;
+}
+.combined-button .new-device-button {
+    padding: 0 9px;
+}
+.combined-button .new-device-button i {
+    margin-right: 7px;
+}
+.combined-button .more-button {
+    line-height: 33px;
+    padding: 1px 6px;
+    width: 33px;
+}
+.combined-button .dropdown-toggle i {
+    font-size: 22px;
+}
+.status-bar {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #e6e6e6;
+    height: 33px;
+}
+.status-bar #days {
+    float: left;
+}
+.status-bar #days ul {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 280px;
+}
+.status-bar #days ul li {
+    color: #455a64;
+    display: list-item;
+    float: left;
+    margin-right: 5px;
+}
+.status-bar #days ul li a {
+    color: #455a64;
+}
+.status-bar #days ul li a:hover {
+    color: #304149;
+}
+.status-bar #warning {
+    background-color: #ff9f00;
+    border-radius: 10px;
+    color: #fff;
+    float: right;
+    height: 26px;
+    text-align: center;
+    width: 400px;
+}
+.status-bar #warning i {
+    font-size: 17px;
+}
+.status-bar #warning span {
+    line-height: 26px;
+}
+#grid {
+    -ms-grid-columns: (1fr) [24];
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    height: 80vh;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    outline: 2px solid #e7e7e7;
+    overflow: hidden;
+    width: 100%;
+}
+#grid .grid-col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    min-height: 500px;
+    outline: 1px dashed #e7e7e7;
+}
+#grid .grid-col .grid-col-main {
+    border-bottom: 1px solid #e7e7e7;
+    height: 100%;
+    position: relative;
+}
+#grid .grid-col .grid-col-main .column-chart {
+    background-color: rgba(114, 255, 0, 0.3);
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+}
+#grid .grid-col .grid-col-main .grid-block-wrapper {
+    padding: 3px;
+    z-index: 10;
+}
+#grid .grid-col .grid-col-main .grid-block-wrapper .grid-block {
+    background-color: #4caf50;
+    border: 2px solid #419c45;
+    border-radius: 4px;
+    bottom: 0;
+    color: #fff;
+    font-size: 12px;
+    height: 100%;
+    left: 0;
+    padding: 5px;
+}
+#grid .grid-col .grid-col-main .grid-block-wrapper .grid-block h6 {
+    font-size: 12px;
+    font-weight: 600;
+}
+#grid .grid-col .grid-col-main .grid-block-wrapper .grid-block-active {
+    background-color: #ff5722;
+    border: 2px solid #e84917;
+}
+#grid .grid-col .grid-col-footer {
+    background-color: #f2f2f2;
+    color: #aaa;
+    font-size: 14px;
+    min-height: 24px;
+    text-align: center;
+}
+@media only screen and (max-width: 1199px) {
+    #grid {
+        overflow: scroll;
+    }
+    #grid .grid-col {
+        width: 46.5px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .status-bar {
+        height: 66px;
+    }
+    .status-bar #days {
+        float: none;
+    }
+    .status-bar #days ul {
+        margin: 0 auto;
+    }
+    .status-bar #warning {
+        float: none;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .logo {
+        margin: 0 auto;
+    }
+    .combined-button {
+        float: none;
+        margin: 0 auto;
+    }
+    .top-line-header {
+        height: 100px;
+    }
+}
+@media only screen and (max-width: 419px) {
+    .status-bar #warning {
+        font-size: 14px;
+        width: 250px;
+    }
+    .status-bar #warning i {
+        font-size: 15px;
+    }
+}

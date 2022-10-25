@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="uk">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Calendar</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+		<link rel="stylesheet" href="libs/fontawesome-free-6.2.0-web/css/all.min.css">
+		<link rel="stylesheet" href="css/app.min.css">
+	</head>
+	<body>
+
+	<header>
+		<div class="container-fluid">
+			<div class="row top-line">
+				<h1 class="col-12 text-center">Інтелектуальний помічник OpenHAB (v1.0)</h1>
+			</div>
+			<div class="row align-items-center top-line-header">
+				<div class="col-sm-6 col-12">
+					<div class="logo">
+						<div class="logo-icon">
+							<i class="fa-regular fa-calendar-days"></i>
+						</div>
+						<h2>Календар</h2>
+					</div>
+				</div>
+				<div class="col-sm-6 col-12">
+					<div class="combined-button">
+						<button class="custom-btn new-device-button">
+							<i class="fa-sharp fa-solid fa-plus"></i>Додати прилад
+						</button>
+						<button class="dropdown-toggle custom-btn more-button" data-bs-toggle="dropdown">
+							<i class="fa-sharp fa-solid fa-angles-down"></i>
+						</button>
+						<ul class="dropdown-menu">
+						  	<li><a class="dropdown-item" href="#">Встановити генерацію електроенергії</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="container-fluid h-100">
+			<div class="row align-items-center status-bar">
+				<div class="col-12 col-md-5">
+					<div id="days">
+						<ul>
+							<li><b><a href="#" id="today">Сьогодні</a></b></li>
+							<li>|</li>
+							<li><a href="#" id="tomorrow">Завтра</a></li>
+							<li>|</li>
+							<li><a href="#" id="aftertomorrow">Післязавтра</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-md-7">
+					<div id="warning">
+						<i class="fa-solid fa-circle-exclamation"></i>
+						<span>Є рекомендації щодо оптимізації електроенергії</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<div id="grid">
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								00:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								01:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								02:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								03:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								04:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								05:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								06:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								07:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								08:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								09:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								10:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								11:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								12:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								13:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								14:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								15:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								16:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								17:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								18:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								19:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								20:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								21:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								22:00
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="grid-col-main"></div>
+							<div class="grid-col-footer">
+								23:00
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<script src="js/app.min.js"></script>
+	</body>
+</html>
